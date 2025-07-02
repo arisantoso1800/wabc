@@ -1,0 +1,9 @@
+CRITICAL - 2023-03-27 08:52:45 --> floor(): Argument #1 ($num) must be of type int|float, string given
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php on line 190.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(190): floor('3-Des-93')
+ 2 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(219): PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject('3-Des-93', Object(DateTimeZone))
+ 3 APPPATH/Controllers/Home.php(76): PhpOffice\PhpSpreadsheet\Shared\Date::excelToTimestamp('3-Des-93')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

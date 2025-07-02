@@ -1,0 +1,896 @@
+ERROR - 2025-05-30 13:23:15 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:23:15 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:23:15 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:23:15 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:23:15 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:23:15 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:23:15 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:23:15 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:58:42 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:58:42 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:58:42 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-05-30 13:58:42 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:58:42 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 13:58:42 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:58:42 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:58:42 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:59:13 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:59:13 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:59:13 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:59:13 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:59:13 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:59:13 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 13:59:13 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 13:59:13 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:18 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:18 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:18 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:18 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:18 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:18 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:18 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:18 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:25 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:25 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:25 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:25 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:25 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:25 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:00:25 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:00:25 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:12 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:12 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:12 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:12 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:12 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:31 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:31 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:31 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:31 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:31 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:31 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:31 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:31 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:46 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:46 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(829): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-30 14:01:46 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-05-30 14:01:46 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2025-05-30 14:01:46 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-30 14:01:46 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(786): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:01:46 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-01\' and \'2025-05-30\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(861): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:01:46 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-01\' and \'2025-05-30\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(808): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:32:40 --> Could not move file "phpdIRvGD" to "/opt/lampp/htdocs/wabc/public/uploadsexcel/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpdIRvGD', 'FCPATH/uploadsexcel', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(344): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsexcel', 'FCPATH/template.xlsx')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:33:05 --> Could not move file "phpRGFd0P" to "/opt/lampp/htdocs/wabc/public/uploadsexcel/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpRGFd0P', 'FCPATH/uploadsexcel', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(344): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsexcel', 'FCPATH/template.xlsx')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:34:55 --> Could not move file "phpiMSvzu" to "/opt/lampp/htdocs/wabc/public/uploadsexcel/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpiMSvzu', 'FCPATH/uploadsexcel', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(344): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsexcel', 'FCPATH/template.xlsx')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:37:18 --> Could not move file "php5DR3u9" to "/opt/lampp/htdocs/wabc/public/uploadsexcel/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('php5DR3u9', 'FCPATH/uploadsexcel', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(344): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsexcel', 'FCPATH/template.xlsx')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:49:45 --> Could not move file "phpoGk0T5" to "/opt/lampp/htdocs/wabc/public/uploadsflayer/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpoGk0T5', 'FCPATH/uploadsflayer', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(335): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsflayer', 'Logo RST BARU.png')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:53:06 --> Could not move file "phprWvzdG" to "/opt/lampp/htdocs/wabc/public/uploadsflayer/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phprWvzdG', 'FCPATH/uploadsflayer', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(335): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsflayer', 'Logo RST BARU.png')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-30 14:55:03 --> Could not move file "phpHEUa9x" to "/opt/lampp/htdocs/wabc/public/uploadsflayer/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpHEUa9x', 'FCPATH/uploadsflayer', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(335): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsflayer', 'qurban 2025 poster.png')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

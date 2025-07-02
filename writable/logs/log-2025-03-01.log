@@ -1,0 +1,22 @@
+CRITICAL - 2025-03-01 13:05:15 --> Could not move file "phpHMLREp" to "/opt/lampp/htdocs/pkrs/public/uploadsflayer/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpHMLREp', 'FCPATH/uploadsflayer', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(261): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsflayer', 'WhatsApp Image 2025-03-01 at 12.12.18.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-01 13:05:26 --> Could not move file "phpDErkps" to "/opt/lampp/htdocs/pkrs/public/uploadsflayer/". Reason: 
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpDErkps', 'FCPATH/uploadsflayer', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Pkrs.php(261): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH/uploadsflayer', 'WhatsApp Image 2025-03-01 at 12.12.18.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->sendWabcviaexcel()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-03-01 13:26:02 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes)
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php on line 2543.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-01 13:26:47 --> Allowed memory size of 536870912 bytes exhausted (tried to allocate 20480 bytes)
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php on line 2543.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()

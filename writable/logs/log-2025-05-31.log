@@ -1,0 +1,653 @@
+ERROR - 2025-05-31 07:35:37 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:37 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:37 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:37 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:37 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:37 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-02\' and \'2025-05-31\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:37 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:37 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:52 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:52 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:52 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:52 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:53 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:53 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-02\' and \'2025-05-31\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:35:53 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:35:53 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:53:51 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:53:51 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `penjab` `b` ON a.`kd_pj`=b.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`status_lanjut` = \'Ralan\'
+GROUP BY `b`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(787): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getRajal()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:53:51 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `p`.`png...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.`png...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.`png...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:53:51 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `p`.`png_jawab`, COUNT(a.`no_rawat`) jml
+FROM `reg_periksa` `a`
+INNER JOIN `booking_operasi` `b` ON `a`.`no_rawat` =`b`.`no_rawat`
+INNER JOIN `penjab` `p` ON `a`.`kd_pj` =`p`.`kd_pj`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+GROUP BY `p`.`png_jawab`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(830): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:53:51 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `b`.`inf...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `b`.`inf...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `b`.`inf...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`inf...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:53:51 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `b`.`informasi`, COUNT(b.informasi) jml
+FROM `reg_periksa` `a`
+INNER JOIN `pasien` `b` ON `a`.`no_rkm_medis` =`b`.`no_rkm_medis`
+WHERE `a`.`tgl_registrasi` between \'2025-05-02\' and \'2025-05-31\'
+        and `a`.`status_bayar` = \'Sudah Bayar\'
+        and `a`.`kd_pj` = \'UMP\'
+GROUP BY `b`.`informasi`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(809): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getInformasi()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 07:53:51 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `o`.`no_...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `o`.`no_...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `o`.`no_...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_...', Array, false)
+#4 /opt/lampp/htdocs/wabc/app/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+#5 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+#6 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+#7 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2025-05-31 07:53:51 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `o`.`no_rawat`, `o`.`tgl_operasi`, `o`.`kode_paket`, `po`.`nm_perawatan`, `rp`.`kd_pj`, `p`.`png_jawab`, -- rp.status_bayar
+            count(*) jml
+FROM `operasi` `o`
+INNER JOIN `paket_operasi` `po` ON `o`.`kode_paket` =`po`.`kode_paket`
+INNER JOIN `reg_periksa` `rp` ON `o`.`no_rawat` =`rp`.`no_rawat`
+INNER JOIN `penjab` `p` ON `rp`.`kd_pj` =`p`.`kd_pj`
+WHERE `o`.`tgl_operasi` between \'2025-05-02\' and \'2025-05-31\' and `rp`.`status_bayar` = \'Sudah Bayar\'
+            and `po`.`nm_perawatan` LIKE \'%KATARAK%\'
+GROUP BY `rp`.`kd_pj`', [], false)
+ 2 APPPATH/Controllers/Pkrs.php(862): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->getOperasiKatarak()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 09:07:32 --> Undefined array key "nm_template"
+in APPPATH/Controllers/Template.php on line 36.
+ 1 APPPATH/Controllers/Template.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nm_template"', 'APPPATH/Controllers/Template.php', 36)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Template->simpan()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 09:07:58 --> Call to a member function save() on null
+in APPPATH/Controllers/Template.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Template->simpan()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 09:08:40 --> Call to a member function save() on null
+in APPPATH/Controllers/Template.php on line 39.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Template->simpan()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 09:08:57 --> mysqli_sql_exception: No database selected in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `te...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /opt/lampp/htdocs/wabc/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/wabc/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/wabc/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /opt/lampp/htdocs/wabc/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /opt/lampp/htdocs/wabc/app/Controllers/Template.php(39): CodeIgniter\BaseModel->save(Array)
+#9 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Template->simpan()
+#10 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+#11 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-31 09:08:57 --> No database selected
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `template` (`nm_template`, `text`) VALUES (:nm_template:, :text:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/Template.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Template->simpan()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2025-05-31 09:09:12 --> mysqli_sql_exception: Table 'db_wabc.template' doesn't exist in /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /opt/lampp/htdocs/wabc/system/Database/MySQLi/Connection.php(295): mysqli->query('INSERT INTO `te...', 0)
+#1 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `te...')
+#2 /opt/lampp/htdocs/wabc/system/Database/BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `te...')
+#3 /opt/lampp/htdocs/wabc/system/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `te...', Array, false)
+#4 /opt/lampp/htdocs/wabc/system/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/wabc/system/BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 /opt/lampp/htdocs/wabc/system/Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 /opt/lampp/htdocs/wabc/system/BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 /opt/lampp/htdocs/wabc/app/Controllers/Template.php(39): CodeIgniter\BaseModel->save(Array)
+#9 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(934): App\Controllers\Template->simpan()
+#10 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+#11 /opt/lampp/htdocs/wabc/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 /opt/lampp/htdocs/wabc/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2025-05-31 09:09:12 --> Table 'db_wabc.template' doesn't exist
+in SYSTEMPATH/Database/BaseConnection.php on line 645.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `template` (`nm_template`, `text`) VALUES (:nm_template:, :text:)', [...], false)
+ 2 SYSTEMPATH/Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH/BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH/Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH/BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH/Controllers/Template.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Template->simpan()
+ 8 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Template))
+ 9 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-31 09:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:32:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:33:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:33:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:38:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:44:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:44:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:53:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:55:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:57:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:57:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 09:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-31 10:07:28 --> Unclosed '{' on line 290
+in APPPATH/Views/pkrs/broadcastviaexcel.php on line 566.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pkrs/broadcastviaexcel', [], true)
+ 3 APPPATH/Controllers/Pkrs.php(38): view('pkrs/broadcastviaexcel')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->broadcastViaexcel()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 10:08:28 --> Undefined variable $listdata
+in APPPATH/Views/pkrs/broadcastviaexcel.php on line 290.
+ 1 APPPATH/Views/pkrs/broadcastviaexcel.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listdata', 'APPPATH/Views/pkrs/broadcastviaexcel.php', 290)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pkrs/broadcastviaexcel.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pkrs/broadcastviaexcel', [], true)
+ 5 APPPATH/Controllers/Pkrs.php(38): view('pkrs/broadcastviaexcel')
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->broadcastViaexcel()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-31 11:35:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 11:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 11:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 11:58:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-31 13:00:21 --> syntax error, unexpected token ";"
+in APPPATH/Views/pkrs/index.php on line 275.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('pkrs/index', [], true)
+ 3 APPPATH/Controllers/Pkrs.php(35): view('pkrs/index', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Pkrs->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pkrs))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-31 13:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:03:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:03:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-31 13:41:31 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:41:34 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:41:47 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:42:01 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:42:22 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:35 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:36 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:36 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:36 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:37 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:37 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:43:37 --> Class "App\Filters\LoginFilter" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:46:23 --> "login" filter must have a matching alias defined.
+in SYSTEMPATH/Filters/Filters.php on line 340.
+ 1 SYSTEMPATH/Filters/Filters.php(340): CodeIgniter\Filters\Exceptions\FilterException::forNoAlias('login')
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\Filters\Filters->enableFilter('login', 'before')
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:48:15 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:49:30 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:49:59 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:00 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:00 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:17 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:18 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:18 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2025-05-31 13:50:19 --> Class "App\Filters\Login" not found
+in SYSTEMPATH/Filters/Filters.php on line 166.
+ 1 SYSTEMPATH/CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('/', 'before')
+ 2 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2025-05-31 13:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:51:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:52:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:52:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:53:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:55:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:57:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:57:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 13:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:13:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:14:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:17:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:18:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:26:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-31 14:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

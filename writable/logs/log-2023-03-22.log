@@ -1,0 +1,31 @@
+CRITICAL - 2023-03-22 16:07:02 --> 'continue' not in the 'loop' or 'switch' context
+in APPPATH/Controllers/Home.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-22 16:07:45 --> 'continue' not in the 'loop' or 'switch' context
+in APPPATH/Controllers/Home.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-22 16:08:51 --> 'continue' not in the 'loop' or 'switch' context
+in APPPATH/Controllers/Home.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-03-22 16:13:54 --> Attempt to read property "status" on null
+in APPPATH/Controllers/Home.php on line 90.
+ 1 APPPATH/Controllers/Home.php(90): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on null', 'APPPATH/Controllers/Home.php', 90)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waSendquotesramadhan()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 16:14:57 --> Attempt to read property "status" on null
+in APPPATH/Controllers/Home.php on line 91.
+ 1 APPPATH/Controllers/Home.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "status" on null', 'APPPATH/Controllers/Home.php', 91)
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waSendquotesramadhan()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-22 17:09:29 --> File "sample2.xlsx" does not exist.
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/File.php on line 146.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Reader/Xlsx.php(143): PhpOffice\PhpSpreadsheet\Shared\File::assertFile('sample2.xlsx')
+ 2 APPPATH/Controllers/Home.php(47): PhpOffice\PhpSpreadsheet\Reader\Xlsx->listWorksheetInfo('sample2.xlsx')
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waSendquotesramadhan()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,168 @@
+CRITICAL - 2023-03-24 07:38:38 --> syntax error, unexpected double-quoted string "Datang kepada kalian bulan yan..."
+in APPPATH/Controllers/Home.php on line 226.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:00:05 --> Unclosed '{' on line 73 does not match ')'
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/Home.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH/CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:02:14 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:02:19 --> Class "App\Controllers\Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:02:21 --> Class "App\Controllers\Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:02:21 --> Class "App\Controllers\Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:02:25 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:03 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:04 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:05 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:05 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:06 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:06 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:06 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:06 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:36 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:37 --> Class "Shared\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:43 --> Class "Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:45 --> Class "Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:50 --> Class "App\Controllers\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:03:51 --> Class "App\Controllers\Date" not found
+in APPPATH/Controllers/Home.php on line 77.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:10:21 --> floor(): Argument #1 ($num) must be of type int|float, string given
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php on line 190.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(190): floor('3-Des-93')
+ 2 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(219): PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject('3-Des-93', Object(DateTimeZone))
+ 3 APPPATH/Controllers/Home.php(76): PhpOffice\PhpSpreadsheet\Shared\Date::excelToTimestamp('3-Des-93')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:10:27 --> floor(): Argument #1 ($num) must be of type int|float, string given
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php on line 190.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(190): floor('3-Des-93')
+ 2 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(219): PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject('3-Des-93', Object(DateTimeZone))
+ 3 APPPATH/Controllers/Home.php(76): PhpOffice\PhpSpreadsheet\Shared\Date::excelToTimestamp('3-Des-93')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:10:28 --> floor(): Argument #1 ($num) must be of type int|float, string given
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php on line 190.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(190): floor('3-Des-93')
+ 2 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(219): PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject('3-Des-93', Object(DateTimeZone))
+ 3 APPPATH/Controllers/Home.php(76): PhpOffice\PhpSpreadsheet\Shared\Date::excelToTimestamp('3-Des-93')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-24 15:10:28 --> floor(): Argument #1 ($num) must be of type int|float, string given
+in APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php on line 190.
+ 1 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(190): floor('3-Des-93')
+ 2 APPPATH/ThirdParty/vendorphpexcel/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Shared/Date.php(219): PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject('3-Des-93', Object(DateTimeZone))
+ 3 APPPATH/Controllers/Home.php(76): PhpOffice\PhpSpreadsheet\Shared\Date::excelToTimestamp('3-Des-93')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->waUltahSDI()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
